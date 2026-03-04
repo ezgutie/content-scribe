@@ -1,0 +1,13 @@
+{
+  "title_min_chars": 50,
+  "title_max_chars": 60,
+  "meta_min_chars": 150,
+  "meta_max_chars": 160,
+  "min_words": 1200,
+  "max_words": 2000,
+  "max_keyword_density": 0.02,
+  "min_internal_links": 2,
+  "max_paragraph_lines": 4,
+  "require_lists": true,
+  "require_alt_text": true
+}

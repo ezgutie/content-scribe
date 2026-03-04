@@ -1,0 +1,14 @@
+{
+  "name": "NOUD",
+  "url": "https://noud.es",
+  "blog_path": "/blog/",
+  "language": "es",
+  "author": "NOUD",
+  "netlify_site_id": "a83970a0-bb93-44d5-bac9-4219f0011861",
+  "internal_links": [
+    {"url": "/", "anchor": "consultoría tecnológica"},
+    {"url": "/#servicios", "anchor": "nuestros servicios"},
+    {"url": "/#proceso", "anchor": "nuestro proceso"},
+    {"url": "/nosotros/", "anchor": "sobre nosotros"}
+  ]
+}
