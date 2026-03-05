@@ -1,49 +1,48 @@
 # Content Scribe 📝
 
-Agente de IA especializado en generar contenido SEO para blogs.
+Agente de contenido para el blog de [noud.es](https://noud.es/blog/). Estratega editorial + redactor SEO.
 
-## ¿Qué es?
+## Qué hace
 
-Content Scribe es un agente autónomo que:
-1. Investiga un tema usando búsqueda web
-2. Genera un artículo optimizado para SEO
-3. Lo formatea en HTML listo para publicar
-4. Lo deploya a un sitio estático (Netlify)
+Transforma conversaciones de trabajo reales en artículos de blog optimizados para SEO. No inventa temas — trabaja con lo que el equipo ya hizo.
 
-## Arquitectura
+## Pipeline
+
+1. **Identificar** — Extraer temas de sesiones de trabajo
+2. **Desglosar** — Generar posts posibles con ángulo, keyword y etapa de funnel
+3. **Investigar** — Buscar datos complementarios en internet
+4. **Desarrollar** — Escribir el artículo integrando experiencia real + contexto externo
+5. **Publicar** — Deploy a Netlify (solo con aprobación humana)
+
+## Estructura
 
 ```
 content-scribe/
-├── README.md              ← Este archivo
-├── SOUL.md                ← Personalidad y directrices del agente
+├── SOUL.md          — Identidad, criterio editorial, estilo, reglas SEO
+├── AGENTS.md        — Contrato operativo, prioridades, niveles de autonomía
+├── IDENTITY.md      — Nombre, criatura, vibe, emoji
+├── TOOLS.md         — Config del entorno (Netlify, APIs, rutas)
+├── CAPABILITIES.md  — Qué puede hacer, pipeline, límites
+├── MEMORY.md        — Keywords usadas, posts publicados, decisiones
+├── HEARTBEAT.md     — Tareas autónomas programadas
 ├── config/
-│   ├── site.json          ← Configuración del sitio target (URL, estilo, deploy)
-│   └── seo-rules.json     ← Reglas SEO (longitud, keywords, estructura)
+│   ├── site.json    — Configuración de noud.es
+│   └── seo-rules.json — Reglas SEO en formato máquina
 ├── templates/
-│   └── article.html       ← Template HTML del artículo
-├── scripts/
-│   ├── research.py        ← Investigación de tema (keywords, competencia)
-│   ├── generate.py        ← Generación del artículo
-│   ├── seo-check.py       ← Validación SEO pre-publicación
-│   └── publish.py         ← Deploy a Netlify
-├── output/                ← Artículos generados (borradores + finales)
+│   └── article.html — Template HTML (matching estilo noud.es)
+├── scripts/         — Scripts del pipeline (por desarrollar)
+├── output/          — Artículos generados
 └── docs/
-    ├── ROADMAP.md         ← Estado del proyecto
-    └── DESIGN.md          ← Diseño técnico detallado
+    ├── DESIGN.md    — Diseño técnico
+    └── ROADMAP.md   — Estado del proyecto
 ```
 
-## Stack
-- Python 3 (scripts de investigación, generación, validación)
-- API de búsqueda web (Brave Search)
-- LLM para generación (Claude/GPT)
-- Netlify API para deploy
-- HTML estático (sin framework)
+## Target
+
+- **Sitio:** https://noud.es/blog/
+- **Audiencia:** PYMEs españolas buscando digitalización
+- **Plataforma:** Tobias (MTP)
 
 ## Estado
-🟡 En desarrollo — Fase 1 (diseño y estructura base)
 
-## Target
-- **Sitio:** https://noud.es/blog/
-- **Tema:** Transformación digital, automatización, IA, consultoría tech
-- **Idioma:** Español
-- **Audiencia:** PYMEs españolas buscando digitalización
+🟡 En desarrollo — Definición del agente completa, scripts pendientes
